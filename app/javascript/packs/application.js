@@ -11,3 +11,9 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+require('jquery')
+
+$(document).ready(function() {
+  $("p").text("jQuery稼働テスト成功！");
+});
