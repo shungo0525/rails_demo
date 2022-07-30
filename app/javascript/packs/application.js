@@ -14,6 +14,12 @@ ActiveStorage.start()
 
 require('jquery')
 
-$(document).ready(function() {
-  $("p").text("jQuery稼働テスト成功！");
+$(document).ready(function(){
+  $('.your-class').slick({
+    dots: true,
+    slidesToShow: 3,
+    centerPadding: '30px',
+    centerMode: false,
+    initialSlide: 0,
+  });
 });
